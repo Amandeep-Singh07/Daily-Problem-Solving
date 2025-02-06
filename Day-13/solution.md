@@ -18,7 +18,7 @@ public class Solution {
            int b=sc.nextInt();
            int n=sc.nextInt();
            
-           int value=a;
+           int value=a;   // Not necessary
            for(int j=0;j<n;j++){
             value+=Math.pow(2,j)*b;  // Using Math.pow function where 2 is  number and j is the power
             System.out.print(value+" ");  

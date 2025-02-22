@@ -14,7 +14,7 @@ public class Main {
         char[] charArray = input.toCharArray();  // Converts the string intto a character array
         
     
-        System.out.println(Arrays.toString(charArray)); // here first toString is converting the array in the string and print as it is.
+        System.out.println(Arrays.toString(charArray)); // here first toString is converting the charArray in the string and print in the form of Array by the help of Arrays..
         
         
     }

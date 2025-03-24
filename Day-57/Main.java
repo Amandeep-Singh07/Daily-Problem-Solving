@@ -45,22 +45,35 @@
 //Write a program to check if a given date is before or after the current date.
 //How do you determine if a specific year is a leap year using LocalDate?
 
-import java.time.*;
+// import java.util.*;
+// import java.time.*;
 
-class Main {
-    public static void main(String args[]) {
-        LocalDate d1 = LocalDate.now();
-        System.out.println(d1);
+// class Main {
+//     public static void main(String args[]) {
+//         LocalDate d1 = LocalDate.now();
+//         System.out.println(d1);
 
-        LocalDate d2 = d1.plusDays(10);
-        System.out.println(d2);
+//         Scanner sc = new Scanner(System.in);
+//         String s1=sc.nextLine();
+//         LocalDate d2 = LocalDate.parse(s1);
 
-        LocalDate d3 = d1.minusDays(3);
-        System.out.println(d3);
+//         if (d2.isBefore(d1)) {
+//             System.out.println("It is before the current date");
+//         }
+//         else {
+//             System.out.println("It is after the current date");
+//         }
+        
+//         if (d2.isLeapYear()) {
+//             System.out.println("It is a leap year");
+//         }
+//         else {
+//             System.out.println("It is not a leap year");
+//         }
 
-    }
+//     }
 
-}
+// }
 
 
 // Formatting and Parsing:

@@ -80,24 +80,24 @@
 // Write a java program to format a LocalDate into the dd-MM-yyyy format.
 // How do you parse a string date 2025-03-23 into a LocalDate object?
 
-import java.util.*;
-import java.time.*;
+// import java.util.*;
+// import java.time.*;
 
-class Main {
-    public static void main(String args[]) {
-        LocalDate d1 = LocalDate.now();
-        System.out.println(d1);
+// class Main {
+//     public static void main(String args[]) {
+//         LocalDate d1 = LocalDate.now();
+//         System.out.println(d1);
 
-        Scanner sc = new Scanner(System.in);
-        String s1 = sc.nextLine();
-        LocalDate d2 = LocalDate.parse(s1);
+//         Scanner sc = new Scanner(System.in);
+//         String s1 = sc.nextLine();
+//         LocalDate d2 = LocalDate.parse(s1);
 
-        int d3=d2.getDayOfMonth()
+//         int d3=d2.getDayOfMonth()
 
 
 
-    }
-}
+//     }
+// }
 
 
 
@@ -109,3 +109,33 @@ class Main {
 // Custom Date Calculations
 // Write a Java program to find the number of days between two LocalDate objects.
 // How can you get the day of the week for a specific LocalDate?
+
+
+
+
+
+
+
+
+
+// Date Time Formatter
+
+import java.util.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+
+class Main {
+    public static void main(String args[]) {
+        LocalDate d1 = LocalDate.now();
+        System.out.println(d1);
+
+        Scanner sc = new Scanner(System.in);
+        String s1 = sc.nextLine();
+        LocalDate d2 = LocalDate.parse(s1);
+
+        DateTimeFormatter f1 = DateTimeFormatter.ofPattern("dd/MM/YYYY");
+        System.out.println(f1.format(d2));
+
+
+    }
+}

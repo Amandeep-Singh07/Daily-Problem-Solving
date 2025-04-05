@@ -69,8 +69,116 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         String userInput = scanner.nextLine();
-    
+
         CustomClass customObject = new CustomClass(userInput);
         System.out.println(customObject);
     }
 }
+
+
+// Problem Statement
+
+
+
+// Mr. Smith, a mathematics teacher, is developing an interactive cube calculator program to engage his students. He wants the program to take the user's name and an integer as input, calculate the cube of the integer, and display a personalized message using the class CustomClass.
+
+
+
+// Mr. Smith is interested in ensuring that the program uses the instanceof operator to check the presence of specific instances. 
+
+
+
+// Note
+
+// name is an instance of String class.
+
+// customObj is an instanceof CustomClass.
+
+// Any other instance name other than the above-mentioned will create an error.
+
+// Input format :
+// The first line of input is a string, which represents the name.
+
+// The second line of input is an integer, n.
+
+// Output format :
+// The first line of output displays whether the entered name is an instance of String.
+
+// The second line of output displays the cube of the entered integer.
+
+// The third line of output displays a custom message from the CustomClass in the format "Hello, [name]!".
+
+// The fourth line of output displays whether the instance of customObj is an instance of CustomClass.
+
+
+
+// Refer to the sample output for the formatting specifications.
+
+// Code constraints :
+// The given test cases fall under the following constraints:
+
+// The string name input should be 100 characters.
+
+// 1 ≤ n ≤ 15
+
+// Sample test cases :
+// Input 1 :
+// John
+// 3
+// Output 1 :
+// Name is an instance of String: true
+// Cube of the entered number: 27
+// CustomClass: Hello, John!
+// customObj is an instance of CustomClass: true
+// Input 2 :
+// Bob
+// 5
+// Output 2 :
+// Name is an instance of String: true
+// Cube of the entered number: 125
+// CustomClass: Hello, Bob!
+// customObj is an instance of CustomClass: true
+
+
+// import java.util.Scanner;
+
+// class Main {
+//     static class CustomClass {
+//         String name;
+
+//         // Constructor to initialize the name
+//         public CustomClass(String name) {
+//             this.name = name;
+//         }
+
+//         // Overriding toString() to display the custom message
+//         @Override
+//         public String toString() {
+//             return "Hello, " + name + "!";
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         // Reading input
+//         String name = sc.nextLine();
+//         int n = sc.nextInt();
+
+//         // Checking if the entered name is an instance of String
+//         System.out.println("Name is an instance of String: " + (name instanceof String));
+
+//         // Calculating the cube of the entered integer
+//         int cube = n * n * n;
+//         System.out.println("Cube of the entered number: " + cube);
+
+//         // Creating an instance of CustomClass
+//         CustomClass customObj = new CustomClass(name);
+//         System.out.println("CustomClass: " + customObj);
+
+//         // Checking if customObj is an instance of CustomClass
+//         System.out.println("customObj is an instance of CustomClass: " + (customObj instanceof CustomClass));
+//     }
+// }
+
+

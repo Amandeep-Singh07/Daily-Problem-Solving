@@ -97,3 +97,86 @@ class Main {
         sc.close(); // Always close the Scanner to prevent memory leaks
     }
 }
+
+// Problem Statement
+
+
+
+// Danny is developing a scheduling application that needs to determine the next meeting day based on the current day. 
+
+
+
+// The application allows users to input the current day, and it then determines and displays the next day for scheduling meetings. Write the program that uses the enum concept to implement this feature. 
+
+// Input format :
+// The input consists of a single string representing the day of the week.
+
+// Output format :
+// If the input is a valid day of the week, print the name of the next day in upper case.
+
+// If the input is not a valid day of the week, print "Invalid Input".
+
+
+
+// Refer to the sample output for the formatting specifications.
+
+// Code constraints :
+// The input is case-insensitive.
+
+// enum name: Day
+
+// Sample test cases :
+// Input 1 :
+// MONDAY
+// Output 1 :
+// TUESDAY
+// Input 2 :
+// FriDay
+// Output 2 :
+// SATURDAY
+// Input 3 :
+// Fridays
+// Output 3 :
+// Invalid Input
+
+// You are using Java
+// import java.util.*;
+
+// class Main {
+//     enum Day {
+//         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+//     }
+
+//     public static void main(String args[]) {
+//         Scanner sc = new Scanner(System.in);
+
+//         String d = sc.nextLine().toUpperCase();
+
+//         if (d.equals("MONDAY")) {
+//             System.out.println(Day.TUESDAY);
+//         } else if (d.equals("TUESDAY")) {
+//             System.out.println(Day.WEDNESDAY);
+
+//         } else if (d.equals("WEDNESDAY")) {
+//             System.out.println(Day.THURSDAY);
+
+//         } else if (d.equals("THURSDAY")) {
+//             System.out.println(Day.FRIDAY);
+
+//         } else if (d.equals("FRIDAY")) {
+//             System.out.println(Day.SATURDAY);
+
+//         } else if (d.equals("SATURDAY")) {
+//             System.out.println(Day.SUNDAY);
+
+//         } else if (d.equals("SUNDAY")) {
+
+//             System.out.println(Day.MONDAY);
+//         } else {
+
+//             System.out.println("Invalid Input");
+//         }
+
+//     }
+
+// }

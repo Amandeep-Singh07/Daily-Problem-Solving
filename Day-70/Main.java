@@ -25,7 +25,6 @@
 // hello world, welcome to the world
 // hello universe, welcome to the universe
 
-
 import java.util.Scanner;
 
 class StringManipulation {

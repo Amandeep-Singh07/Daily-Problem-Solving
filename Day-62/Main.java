@@ -45,6 +45,8 @@
 import java.util.Scanner;
 
 class ArrayRotator {
+    int arr[];
+    int n;
 
     public void printRotatedArray() {
 
@@ -53,11 +55,16 @@ class ArrayRotator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int arr[] = new int[n];
 
         for (int i = 0; i < n; i++) {
-            sc.nextInt();
+            arr[i]=sc.nextInt();
         }
         int m = sc.nextInt();
+
+        ArrayRotator ob = new ArrayRotator(arr, m);
+        ob.printRotatedArray();
+  
     }
 
 }

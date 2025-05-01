@@ -17,3 +17,12 @@ public class Main {
         System.out.println("Printing last element of array: " + charArray[charArray.length - 1]);
     }
 }
+
+// Output
+
+// Checking Length:20
+// Size of
+// char array:4
+// Printing last
+// element of array:
+// a

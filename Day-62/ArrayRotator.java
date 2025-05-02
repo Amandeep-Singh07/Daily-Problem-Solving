@@ -42,116 +42,49 @@
 // Output 2 :
 // 98 63 95 74 65
 
+
+
 import java.util.Scanner;
 
 class ArrayRotator {
-    int arr[];
-    int n;
+    private int[] rarr;
+
+    // Constructor: Rotates arr to the left by leftShift positions
+    public ArrayRotator(int[] arr, int leftShift) {
+        int n = arr.length;
+        rarr = new int[n];
+        for (int i = 0; i < n; i++) {
+            rarr[i] = arr[(i + leftShift) % n];
+        }
+    }
 
     public void printRotatedArray() {
-
+        for (int i = 0; i < rarr.length; i++) {
+            System.out.print(rarr[i]);
+            if (i < rarr.length - 1) {
+                System.out.print(" ");
+            }
+        }
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int n = sc.nextInt();
-        int arr[] = new int[n];
+        int[] arr = new int[n];
 
         for (int i = 0; i < n; i++) {
-            arr[i]=sc.nextInt();
+            arr[i] = sc.nextInt();
         }
-        int m = sc.nextInt();
 
-        ArrayRotator ob = new ArrayRotator(arr, m);
-        ob.printRotatedArray();
-  
+        int rightShift = sc.nextInt();
+
+        // To rotate RIGHT by rightShift positions, convert to LEFT rotation by n -
+        // rightShift
+        int leftShift = n - rightShift;
+
+        ArrayRotator rotator = new ArrayRotator(arr, leftShift);
+        rotator.printRotatedArray();
     }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// int arr[];
-
-// public ArrayRotator(int[] originalArray, int positions) {
-//         this.arr=originalArray;
-//         for(int i=0;i<positions;i++){
-//             rotateByOne();
-//         }
-//     }
-
-// public void rotateByOne() {
-//     int n = arr.length;
-//     int last = arr[n - 1];
-
-//     for (int j = n - 1; j > 0; j--) {
-//         arr[j] = arr[j - 1];
-//     }
-//     arr[0] = last;
-// }
-
-
-
-
-
-
-
-
-
-// for(
-
-// int i = 0;i<arr.length;i++){
-//            System.out.print(arr[i]+" ");
-//        }
-
-
-
-
-
-
-
-
-
-
-
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int arr[] = new int[n];
-
-//        for(
-//        int i = 0;i<n;i++)
-//        {
-//            arr[i] = sc.nextInt();
-//        }
-
-//        int m = sc.nextInt();
-
-//        ArrayRotator ob = new ArrayRotator(arr, m);ob.printRotatedArray();
-//    

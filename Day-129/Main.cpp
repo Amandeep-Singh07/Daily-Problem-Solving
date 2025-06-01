@@ -31,7 +31,7 @@ void print1(int n){
 }
 
 int main(){
-    int n;
+    int n,m;
     cin >> n;
     print1(n);
 }

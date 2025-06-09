@@ -3,14 +3,17 @@
 using namespace std;
 
 int printMax(int arr[], int n){
-    int max = INT_MIN;
+    int maxi = INT_MIN;
 
     for (int i = 0; i < n;i++){
-        if(arr[i]>max){
-            max = arr[i];
-        }
+
+        maxi = max(maxi, arr[i]);
+
+        // if(arr[i]>max){
+        //     max = arr[i];
+        // }
     }
-    return max;
+    return maxi;
 }
 
 int printMin(int arr[], int n){

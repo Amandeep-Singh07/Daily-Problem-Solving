@@ -211,7 +211,7 @@ void explainSet() {  // In two words Sorted and Unique
     //If the requested bound doesn’t exist (e.g., you try upper_bound(4) when the set is {1, 2, 3, 4}), it returns st.end() (an iterator pointing past the last element).
 }
 
-void explainMultiSet() {
+void explainMultiSet() {  // how it is different from set is , it preserves the sorted order but it allows the duplicate value (i.e not unique like set)
     multiset<int> ms;
     ms.insert(1); // {1}
     ms.insert(1); // {1, 1}
@@ -219,7 +219,7 @@ void explainMultiSet() {
 
     ms.erase(1); // all 1's erased
 
-    int cnt = ms.count(1);
+    int cnt = ms.count(1); // here it will count the no. of occurence of 1 in the multiset
 
     ms.erase(ms.find(1)); // only a single one erased
 
@@ -228,9 +228,15 @@ void explainMultiSet() {
 
 void explainUSet() {
     unordered_set<int> st;
-    // Everything is same just not sorted
+    // Everything is same just not sorted , but elements in the UnordereDset will be unique.
+    
+    // lower_bound and upper_bound function does not works, rest all functions are same as above, it does not stores in any particular order it has a better complexity than set in most cases, except some when collision happens
 }
 
+
+
+
+// a map is a sorted associative container in the Standard Template Library (STL) that stores elements as key-value pairs. Each key in a map is unique, and it is automatically sorted using the less-than (<) comparator by default (i.e., in ascending order).
 void explainMap() {
     map<int, int> mpp1;
     map<int, pair<int, int>> mpp2;

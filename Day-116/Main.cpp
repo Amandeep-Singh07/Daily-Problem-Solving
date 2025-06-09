@@ -48,7 +48,7 @@ void explainVector() {
     cout << *(it) << " ";
 
     // The following were redeclarations of 'it' and have been commented out
-    // vector<int>::iterator it = v.end();
+    // vector<int>::iterator it = v.end(); // end points to the memory location right after the last element of the array
     // vector<int>::iterator it = v.rend();
     // vector<int>::iterator it = v.rbegin();
 
@@ -94,7 +94,7 @@ void explainVector() {
     v1.swap(v2); // v1 -> {0,0,0,0,0}, v2 -> {100,100,100,100,100}
 }
 
-void explainList() {
+void explainList() {   // Now List , is another container in cpp
     list<int> ls;
 
     ls.push_back(2); // {2}
@@ -124,7 +124,8 @@ void explainDeque() {
     // begin, end, rbegin, rend, clear, insert, size, swap
 }
 
-// Stack ==>> LIFO (Last In First Out)
+// Stack ==>> LIFO (Last In First Out)  
+// in stack there is indexing be careful
 void explainStack() {
     stack<int> st;
     st.push(1); // {1}
@@ -163,6 +164,7 @@ void explainQueue() {
 void explainPQ() {
 
     // ALso Known as Max Heap
+    //it stores elements in descending order, i.e., highest priority (largest element) is on top
     priority_queue<int> pq;
     pq.push(5); // {5}
     pq.push(2); // {5, 2} -> {5, 2} (implementation detail, conceptually unordered)
@@ -186,7 +188,7 @@ void explainPQ() {
     // here push and pop happens in O(log n) and top happens in O(1) .
 }
 
-void explainSet() {
+void explainSet() {  // In two words Sorted and Unique
     set<int> st;
     st.insert(1); // {1}
     st.emplace(2); // {1, 2}
@@ -194,17 +196,19 @@ void explainSet() {
     st.insert(4); // {1, 2, 4}
     st.insert(3); // {1, 2, 3, 4}
 
-    auto it = st.find(3);
-    auto it_not = st.find(6);
+    auto it = st.find(3);  // it returns the iterator
+    auto it_not = st.find(6); // if the value is not present then it returns the end iterator value
 
     st.erase(5); // erases 5
-    int cnt = st.count(1);
+    int cnt = st.count(1);  // it will give two value 0 and 1
 
     auto it2 = st.find(3);
     st.erase(it2); // it takes constant time
+ 
+    auto it1 = st.lower_bound(2); //Finds the first element in the set that is not less than 2. (i.e., >= 2)
+    auto it2u = st.upper_bound(3); //Finds the first element in the set that is greater than 3. (i.e., > 3)
 
-    auto it1 = st.lower_bound(2);
-    auto it2u = st.upper_bound(3);
+    //If the requested bound doesn’t exist (e.g., you try upper_bound(4) when the set is {1, 2, 3, 4}), it returns st.end() (an iterator pointing past the last element).
 }
 
 void explainMultiSet() {

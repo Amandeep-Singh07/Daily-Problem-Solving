@@ -3,6 +3,7 @@
 using namespace std;
 
 // Pairs
+// they are defined in <utility> header
 void explainPair() {
 
     pair<int, int> p1 = {1, 3};
@@ -15,21 +16,29 @@ void explainPair() {
     cout << arr[1].second << endl;
 
 }
+// Vector
+//A vector is a dynamic array from the Standard Template Library (STL) in C++.
+//It can grow and shrink in size automatically, unlike normal arrays with fixed size.
 
 void explainVector() {
     vector<int> v;
     v.push_back(1);
     v.emplace_back(2);
+    v.push_back(10);
+    v.push_back(20);
+    v.push_back(12);
+    v.push_back(23);
+    v.push_back(35);
 
     vector<pair<int, int>> vec;
     vec.push_back({1, 2});
     vec.emplace_back(1, 2);
 
-    vector<int> v1(5, 100); // v1 with five 100s
-    vector<int> v2(5);      // v2 with five default-initialized elements (0)
+    vector<int> v1(5, 100); // v1 with five 100s or we can say all the five indexes are 100
+    vector<int> v2(5);      // v2 with five default-initialized elements (0 or any garbage value)
 
     vector<int> v3(5, 20);
-    vector<int> v4(v3);
+    vector<int> v4(v3); // copying the v3 vector in the v4 vector
 
     vector<int>::iterator it = v.begin();
     it++;
@@ -58,12 +67,13 @@ void explainVector() {
         cout << it4 << " ";
     }
 
-    // {10, 20, 12, 23}
-    v.erase(v.begin() + 1);
-    // {10, 12, 23}
-
     // {10, 20, 12, 23, 35}
-    v.erase(v.begin() + 2, v.begin() + 4); // {10, 20, 35} [start, end)
+    v.erase(v.begin() + 1);
+    // {1, 10, 20, 12, 23, 35}
+
+    // {1, 10, 20, 12, 23, 35}
+    if (v.size() >= 5)
+        v.erase(v.begin() + 2, v.begin() + 4); // {1, 10, 23, 35} [start, end)
 
     // Insert function
     vector<int> v_ins(2, 100); // {100, 100}
@@ -74,14 +84,14 @@ void explainVector() {
     v_ins.insert(v_ins.begin(), copy.begin(), copy.end()); // {50, 50, 300, 10, 10, 100, 100}
 
     // {10, 20}
-    cout << v_ins.size(); // 2
+    cout << v_ins.size(); // 7
 
     // {10, 20}
-    v_ins.pop_back(); // {10}
+    v_ins.pop_back(); // {50, 50, 300, 10, 10, 100}
 
     // v1 -> {10, 20}
     // v2 -> {30, 40}
-    v1.swap(v2); // v1 -> {30, 40}, v2 -> {10, 20}
+    v1.swap(v2); // v1 -> {0,0,0,0,0}, v2 -> {100,100,100,100,100}
 }
 
 void explainList() {

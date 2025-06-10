@@ -269,7 +269,7 @@ void explainMultimap() {
 
 void explainUnorderedMap() {
     unordered_map<int,int> ump;
-    // same as map but not sorted
+    // same as map but not sorted but unique keys:)
 }
 
 bool comp(pair<int, int> p1, pair<int, int> p2) {
@@ -289,10 +289,10 @@ void explainExtra() {
 
     pair<int,int> arrp[] = {{1,2}, {2, 1}, {4, 1}};
     int np = sizeof(arrp)/sizeof(arrp[0]);
-    sort(arrp, arrp + np, comp);
+    sort(arrp, arrp + np, comp);  // just above the explain extra part is the comparator i had defined
 
     int num = 7;
-    int cnt1 = __builtin_popcount(num);
+    int cnt1 = __builtin_popcount(num); // it will return number of set bits in case of 7 it will return 3 as binary of 7 is 111.
 
     long long numll = 165786578687LL;
     int cnt2 = __builtin_popcountll(numll);
@@ -303,7 +303,7 @@ void explainExtra() {
         cout << s << endl;
     } while (next_permutation(s.begin(), s.end()));
 
-    int maxi = *max_element(a, a + n);
+    int maxi = *max_element(a, a + n); // it will just give you the maximum element .
 }
 
 int main() {
@@ -314,6 +314,9 @@ int main() {
     cout << "Let's explore vectors in C++:" << endl;
     explainVector();
     cout << "End of vector explanation." << endl;
+
+    explainExtra();
+    cout << "End of explain extra part" << endl;
 
     return 0;
 }

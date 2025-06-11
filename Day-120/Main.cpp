@@ -1,3 +1,4 @@
+// is prime or not
 #include <iostream>
 class Solution {
     public:

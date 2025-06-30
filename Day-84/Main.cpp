@@ -1,4 +1,4 @@
-// Leetcode question
+// Leetcode question 31
 class Solution {
     public:
         void nextPermutation(vector<int>& nums) {

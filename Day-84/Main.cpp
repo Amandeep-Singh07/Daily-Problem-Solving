@@ -1,7 +1,10 @@
 //----->> Leetcode question number 31 .
 #include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main{
+
+
 
 
 class Solution {
@@ -25,4 +28,3 @@ class Solution {
             reverse(nums.begin() + i + 1, nums.end());
         }
     }
-}

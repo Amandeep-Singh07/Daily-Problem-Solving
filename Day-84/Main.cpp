@@ -28,3 +28,7 @@ class Solution {
             reverse(nums.begin() + i + 1, nums.end());
         }
     }
+
+    int main(){
+        
+    }

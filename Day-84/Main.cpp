@@ -1,10 +1,7 @@
-//----->> Leetcode question number 31 .
+// Leetcode question number =>> 31 .
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-
-
-
 
 
 class Solution {
@@ -29,6 +26,4 @@ class Solution {
         }
     }
 
-    int main(){
-        
-    }
+    

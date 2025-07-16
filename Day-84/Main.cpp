@@ -1,4 +1,4 @@
-//--> Leetcode question number --> 31. Next Permutation.
+//-->LC:-) 31. Next Permutation.
 
 class Solution {
     public:

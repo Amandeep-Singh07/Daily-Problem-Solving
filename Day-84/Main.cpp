@@ -1,4 +1,6 @@
-//-->LC:-) 31. Next Permutation.
+// LeetCode Question
+//  31. Next Permutation.
+
 
 class Solution {
     public:
@@ -18,8 +20,6 @@ class Solution {
                 swap(nums[i], nums[j]);
             }
     
-            reverse(nums.begin() + i + 1, nums.end());
-        }
+            reverse(nums.begin() + i + 1,nums.end());
     }
-
-    
+}

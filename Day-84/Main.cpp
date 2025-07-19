@@ -1,5 +1,4 @@
-// LeetCode Question number 31
-//  31. Next Permutation.
+// LeetCode Question number 31. Next Permutation.
 
 
 class Solution {

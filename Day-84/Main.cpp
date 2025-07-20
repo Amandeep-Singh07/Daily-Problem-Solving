@@ -1,5 +1,5 @@
 // LeetCode Question number 31. Next Permutation.
-
+#include<iostream>
 
 class Solution {
     public:

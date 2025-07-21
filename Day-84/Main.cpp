@@ -1,5 +1,6 @@
 // LeetCode Question number 31. Next Permutation.
 #include<iostream>
+using namespace std;
 
 class Solution {
     public:

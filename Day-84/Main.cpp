@@ -1,6 +1,7 @@
 // LeetCode Question number 31. Next Permutation.
 #include<iostream>
 #include <bits/stdc++.h>
+
 using namespace std;
 
 class Solution {
@@ -23,4 +24,8 @@ class Solution {
     
             reverse(nums.begin() + i + 1,nums.end());
     }
+}
+
+int main{
+    
 }

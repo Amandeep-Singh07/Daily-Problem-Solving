@@ -476,4 +476,76 @@
 // }
 
 
+// 40. Find Duplicate Characters
+// Question: Find the characters that appear more than once in a string.
 
+// Example:
+
+// programming
+
+// Output could contain:
+// r
+// g
+// m
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     cin >> s;
+
+//     int freq[256] = {0};
+//     for(char ch: s){
+//         freq[ch]++;
+//     }
+//     for (int i = 0; i < 256;i++){
+//         if(freq[i]>1){
+//             cout << char(i)<<endl;
+//         }
+//     }
+
+//         return 0;
+// }
+
+// 39. Check Anagram
+// Question: Check whether two strings are anagrams.
+
+// Example:
+// listen
+// silent
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s1,s2;
+//     cin >> s1 >> s2;
+    
+//     if(s1.length()!=s2.length()){
+//         cout << "not anagram";
+//         return 0;
+//     }
+
+//     int freq[256] = {0};
+//     for(char ch:s1){
+//         freq[ch]++;
+//     }
+//     for(char ch:s2){
+//         freq[ch]--;
+//     }
+
+//     for (int i = 0; i < 256;i++){
+//         if(freq[i]!=0){
+//             cout << "NOt anagram";
+//             return 0;
+//         }
+//     }
+
+//     cout << "anagram";
+//     return 0;
+// }
+
+
+38. Convert Lowercase to Uppercase
+Question: Convert all lowercase characters in a string to uppercase.

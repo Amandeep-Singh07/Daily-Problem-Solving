@@ -547,5 +547,211 @@
 // }
 
 
-38. Convert Lowercase to Uppercase
-Question: Convert all lowercase characters in a string to uppercase.
+// 38. Convert Lowercase to Uppercase
+// Question: Convert all lowercase characters in a string to uppercase.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     cin >> s;
+
+//     // for(char &ch:s){
+//     //     if(ch>='a'&& ch<='z'){
+//     //         ch = ch - 'a' + 'A';
+//     //     }
+//     // }
+//     for(char &ch:s){
+//         ch = toupper(ch);
+//     }
+//     cout << s;
+// }
+
+// 37. Remove Spaces from a String
+// Question: Remove all spaces from a given string.
+
+// Example:
+
+// Hello World → HelloWorld
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     getline(cin, s);
+//     for(char ch:s){
+//         if(ch !=' '){
+//             cout << ch;
+//         }
+//     }
+// }
+
+
+// 36. Count Number of Words
+// Question: Count the number of words in a sentence.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     getline(cin, s);
+//     int count = 0;
+//     string word;
+
+//     stringstream ss(s);
+//     while(ss>> word){
+//         count++;
+//     }
+//     cout << count;
+// }
+
+
+// 35. Count Characters in a String
+// Question: Count the frequency of each character in a string.
+
+// Example:
+
+// hello
+// h = 1
+// e = 1
+// l = 2
+// o = 1
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     cin >> s;
+//     int freq[256] = {0};
+
+//     for (char ch:s){
+//         freq[ch]++;
+//     }
+//     for (int i = 0; i < 256;i++){
+//         if(freq[i]>0){
+//         cout << char(i) << " = " << freq[i]<<endl;
+//     }
+// }
+// }
+
+
+// 34. Count Vowels and Consonants
+// Question: Count the number of vowels and consonants in a string.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     cin >> s;
+//     int vowels = 0,consonants=0;
+    
+
+//     for(char ch:s){
+//     if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+//         vowels++;
+//     }
+//     else{
+//         consonants++;
+//     }
+// }
+
+// cout << "vowels " << vowels << endl;
+// cout << "consonants " << consonants << endl;
+// }
+
+
+// 33. Palindrome String
+// Question: Check whether a string is a palindrome.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string s;
+//     cin >> s;
+
+//     int i = 0;
+//     int j = s.length() - 1;
+//     while(i<j){
+//         if(s[i]!=s[j]){
+//             cout << "Not a palindrome";
+//             return 0;
+//         }
+//         i++;
+//         j--;
+//     }
+//     cout << "Palindrome String";
+// }
+
+// 32. Reverse a String
+// Question: Reverse a given string.
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     string a;
+//     cin >> a;
+
+//     for (int i = a.length()-1; i>=0;i--){
+//         cout << a[i];
+//     }
+// }
+
+// 31. Move Zeroes to the End
+// Question: Move all zeroes to the end while maintaining the order of non-zero elements.
+
+// Example:
+
+// 0 1 0 3 12 → 1 3 12 0 0
+
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin >> n;
+//     vector<int> arr(n);
+
+//     for (int i = 0; i < n;i++){
+//         cin >> arr[i];
+//     }
+//     int nonzeroindex = 0;
+
+//     for (int i = 0; i < n;i++){
+//         if(arr[i]!=0){
+//             arr[nonzeroindex] = arr[i];
+//             nonzeroindex++;
+//         }
+//     }
+//     for (int i = nonzeroindex; i < n;i++){
+//         arr[i] = 0;
+//     }
+
+//     for (int i = 0; i < n;i++){
+//         cout << arr[i]<<" ";
+//     }
+// }
+
+// 30. Find Missing Number
+// Question: An array contains numbers from 1 to n with one number missing. Find the missing number.
+
+// Example:
+
+// 1 2 3 5 → 4
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+
+    
+}
